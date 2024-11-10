@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kelurahan Purwokerto Utara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff6f61, #ff4e00);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            header h1 {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            header h4 {
+                font-size: 1.5rem;
+                margin-top: 15px;
+            }
+
+        .btn-explore {
+            margin-top: 30px;
+            background-color: #ff4e00;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+            .btn-explore:hover {
+                background-color: #e04e00;
+            }
+
+        /* Navigation */
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+        }
+
+            nav .logo-link {
+                font-size: 1.8rem;
+                font-weight: 600;
+                color: white;
+                text-decoration: none;
+            }
+
+            nav .navigation {
+                list-style: none;
+                padding-left: 0;
+            }
+
+                nav .navigation li {
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+
+                    nav .navigation li a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.1rem;
+                        transition: color 0.3s;
+                    }
+
+                        nav .navigation li a:hover {
+                            color: #ff6f61;
+                        }
+
+        /* About Section */
+        .about {
+            padding: 50px 0;
+            background-color: white;
+        }
+
+            .about .about-title {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+                color: #ff6f61;
+            }
+
+        .about-desc p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .map {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+            .map .title {
+                font-size: 2.5rem;
+                color: #ff6f61;
+                margin-bottom: 20px;
+            }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+            .footer .social a {
+                color: white;
+                font-size: 1.5rem;
+                margin: 0 15px;
+                transition: color 0.3s;
+            }
+
+                .footer .social a:hover {
+                    color: #ff6f61;
+                }
+
+            .footer .credits {
+                margin-top: 20px;
+                font-size: 1rem;
+                color: #bbb;
+            }
+
+        /* Scroll Reveal */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+            .scroll-reveal.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        /* Floating Action Button */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff4e00;
+            color: white;
+            border-radius: 50%;
+            padding: 15px 20px;
+            font-size: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+            .fab:hover {
+                background-color: #e04e00;
+            }
+
+        @media (max-width: 767px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header h4 {
+                font-size: 1.2rem;
+            }
+
+            nav .logo-link {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo-link">Purwokerto Utara</a>
+            <ul class="navigation">
+                <li><a href="#about">Sejarah</a></li>
+                <li><a href="#map">Peta</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home">
+        <div class="container">
+            <h1><strong>Kelurahan Purwokerto Utara</strong></h1>
+            <h4>"Maju Bersama, Purwokerto Utara untuk Masa Depan"</h4>
+            <button class="btn-explore">Explore more <i class="ri-arrow-right-line"></i></button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="scroll-reveal">
+                <h2 class="about-title">Sejarah Kelurahan Purwokerto Utara</h2>
+                <div class="about-desc">
+                    <p>Kelurahan Purwokerto Utara terletak di kecamatan Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah. Sejarahnya yang panjang dimulai dari masa Kerajaan Mataram hingga masa kolonial Belanda dan Indonesia merdeka.</p>
+                    <h3>Sejarah Awal</h3>
+                    <p>Purwokerto Utara, bagian dari wilayah Banyumas, terpengaruh kuat oleh Kerajaan Mataram pada zaman Hindu-Buddha.</p>
+                    <h3>Masa Kolonial Belanda</h3>
+                    <p>Pada masa penjajahan Belanda, wilayah ini mengalami perubahan besar dalam hal infrastruktur dan sosial ekonomi.</p>
+                    <h3>Kemerdekaan dan Perkembangan</h3>
+                    <p>Setelah Indonesia merdeka, Purwokerto Utara berkembang pesat menjadi pusat kegiatan ekonomi dan budaya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map" id="map">
+        <div class="container text-center">
+            <h1 class="title">Lokasi Kelurahan Purwokerto Utara</h1>
+            <p class="subtitle">Temukan Wilayah Purwokerto Utara!</p>
+            <div class="map-container">
+                <iframe src="https://bayueffendi.github.io/purwanegara/" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h4>Kelurahan Purwokerto Utara</h4>
+            <div class="social">
+                <a href="https://www.instagram.com/kelurahanpurwokertoutara" target="_blank"><i class="ri-instagram-fill"></i></a>
+                <a href="https://wa.me/6287830023175" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+            <p><i class="ri-double-quotes-l"></i> Bersama Membangun Purwokerto Utara yang Sejahtera dan Berbudaya. <i class="ri-double-quotes-r"></i></p>
+            <div class="credits">
+                <p>Created by Bayueffendi, Mahasiswa Universitas Amikom Purwokerto, Jurusan Sistem Informasi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <i class="ri-arrow-up-line"></i>
+    </div>
+
+    <script>
+        // Scroll Reveal Effect
+        document.addEventListener("DOMContentLoaded", function () {
+            let scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+            window.addEventListener('scroll', function () {
+                scrollRevealElements.forEach(function (element) {
+                    let elementPosition = element.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+                    if (elementPosition < windowHeight - 50) {
+                        element.classList.add('visible');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
